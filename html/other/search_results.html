@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready for Radiology | Search Results</title>
+
+    <link rel="icon" type="image/x-icon" href="/Images/logo-zip-file/png/justlogonobgd.png">
+
+    <!-- Preload stylesheets and images -->
+    <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/search_results.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/search_results.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script>
+        // Check theme preference and apply dark mode if necessary
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+
+            if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            } else {
+                const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDarkMode ? 'dark' : 'light');
+            }
+        })();
+    </script>
+
+    <!-- External libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="search-results-page">
+        <section class="search-results-hero">
+            <div class="search-results-hero-content">
+                <h1>Search Results</h1>
+            </div>
+        </section>
+        <div id="search-results" class="search-results-container"></div>    
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/global/navbar.js" defer></script>
+    <script src="/js/global/search_results.js"></script>
+    <script src="/js/global/footer.js" defer></script>
+    <script src="/js/global/text_size.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/double-metaphone/1.0.1/double-metaphone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
+</body>
+</html>

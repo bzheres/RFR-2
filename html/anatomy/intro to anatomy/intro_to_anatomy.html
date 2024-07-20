@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready for Radiology | Introduction to Anatomy</title>
+
+    <link rel="icon" type="image/x-icon" href="/Images/logo-zip-file/png/justlogonobgd.png">
+
+    <!-- Preload stylesheets and images -->
+    <link rel="preload" href="/css/main.css" as="style">
+    <link rel="preload" href="/css/navbar.css" as="style">
+    <link rel="preload" href="/css/footer.css" as="style">
+    <link rel="preload" href="/css/content.css" as="style">
+    <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+
+    <script>
+        // Check theme preference and apply dark mode if necessary
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+
+            if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            } else {
+                const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDarkMode ? 'dark' : 'light');
+            }
+        })();
+    </script>
+
+
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+    <!-- External libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- jQuery and FancyBox scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Article Content -->
+    <section class="article">
+        <header>
+            <h1>Introduction to Anatomy</h1>
+            <p>Date: <time datetime="2024-07-16">July 16, 2024</time></p>
+        </header>
+
+        <article>
+            <section>
+                <h2>Introduction</h2>
+                <p>Before starting to learn anatomy, it is important to understand the different terminology that is used in this field. This article will cover the basics to build a solid foundation:</p>
+                <li class="content_list">The <a href="#anatomical_position">anatomical position</a>.</li>
+                <li class="content_list">The <a href="#anatomical_planes">anatomical planes</a>.</li>
+                <li class="content_list"><a href="#relative_terminology">Terminology to describe structures</a> relative to one another.</li>
+                <li class="content_list"><a href="#movement_terminology">Terminology to describe movement</a>.</li>
+            </section>
+
+            <section>
+                <h2 id="anatomical_position">Anatomical Position</h2>
+                <p>The <strong>anatomical position</strong> is the standard body orientation that anatomical terms are then based off. The <strong>anatomical position</strong> is when the body is positioned:</p>
+                <li class="content_list">Upright</li>
+                <li class="content_list">Feet spread, about shoulder-width apart</li>
+                <li class="content_list">Arms hanging comfortably by the side</li>
+                <li class="content_list">Palms facing forward</li>
+                <p>as seen in the image below.</p>
+                <!-- Example image with FancyBox -->
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Anatomical_position.jpg" data-fancybox="intro_to_anatomy" data-caption="The anatomical position - upright, feet shoulder-width apart, arms by the side, and palms facing forward.">
+                            <img src="/Images/images/Anatomical_position.jpg" alt="Anatomical Position">
+                        </a>
+                        <figcaption>Image: The anatomical position. Connexions, CC BY 3.0 <a href="https://creativecommons.org/licenses/by/3.0">via Wikimedia Commons</a></figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="anatomical_planes">Anatomical Planes</h2>
+                <p>Next, <strong>anatomical planes</strong> are <em>hypothetical planes</em> dividing the body into defferent sections. There are <strong>three anatomical planes</strong> to know:</p>
+                <li class="content_list">The coronal plane.</li>
+                <li class="content_list">The sagittal plane.</li>
+                <li class="content_list">The transverse plane.</li>
+                <p>The <strong>coronal plane</strong>, which is also called the frontal plane, passes through the body vertically. It separates the body into anterior and posteerior sections (terms that will be covered in the next section - <a href="#relative_terminology">Relative Terminology</a>). This can easily be remembered by memorising that the <strong>frontal</strong> plane splits the body into <strong>front (anterior)</strong> and back (posterior) sections.</p>
+                <p>The <strong>sagittal plane</strong> also runs vertically. However, this runs at a right angle to the coronal (frontal) plane to divide the body into equal right and left sections. If the sagittal plane is imagined run through the body vertically <em>slightly off center</em>, it no longer splits the body into equal sections and is called the <strong>parasagittal plane</strong>.</p>
+                <p>The third plane, the <strong>transverse plane</strong>, also called the axial plane, passes through the body horizontally, parallel to the ground. This planedivides the body into superior and inferior sections (terms that will be covered in the next section - <a href="#relative_terminology">Relative Terminology</a>).</p>
+                <p>The images below show the three different <strong>anatomical planes</strong> that you should be confident with.</p>
+                <!-- Example image with FancyBox -->
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Coronal.png" data-fancybox="intro_to_anatomy" data-caption="The coronal (frontal) plane divides the body into anterior and posterior sections.">
+                            <img src="/Images/images/Coronal.png" alt="Coronal Plane">
+                        </a>
+                        <figcaption>Image: Coronal plane. Osteomyoamare This  diagram was created with Microsoft Word., CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/Images/images/Sagittal.png" data-fancybox="intro_to_anatomy" data-caption="The sagittal plane divides the body into left and right sections.">
+                            <img src="/Images/images/Sagittal.png" alt="Sagittal Plane">
+                        </a>
+                        <figcaption>Image: Sagittal plane. Osteomyoamare This  diagram was created with Microsoft Word., CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/Images/images/Transverse.png" data-fancybox="intro_to_anatomy" data-caption="The transverse (axial) plane divides the body into superior and inferior portions.">
+                            <img src="/Images/images/Transverse.png" alt="Transverse Plane">
+                        </a>
+                        <figcaption>Image: Transverse plane. Osteomyoamare This  diagram was created with Microsoft Word., CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/Images/images/Planes_of_Body.jpg" data-fancybox="intro_to_anatomy" data-caption="All three anatomical planes, coronal, sagittal, and transverse planes, shown.">
+                            <img src="/Images/images/Planes_of_Body.jpg" alt="Anatomical Planes">
+                        </a>
+                        <figcaption>Image: Anatomical planes. Connexions, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+            
+
+            </section>
+
+            <section>
+                <h2 id="relative_terminology">Relative Terminology</h2>
+                <p>You may have heard of terms like "anterior" and posterior" before, such as above. These are terms that can be used to describe the position of one body structure relative to another. The use of these terms allow for much more precision when communicating with others. The terms used are based off the <a href="#anatomical_position">anatomical position</a>.</p>
+               
+                <h4 id="superior" class="article_subheading">Superior</h4>
+                <p><strong>Superior:</strong> Directed toward the head or upper part of a strucutre; positioned above.</p>
+                <p>E.g. The knee is <strong>superior</strong> to the foot.</p>
+                
+                <h4 id="inferior" class="article_subheading">Inferior</h4>
+                <p><strong>Inferior:</strong> Directed toward the feet or lower part of a structure; positioned below.</p>
+                <p>E.g. The foot is <strong>inferior</strong> to the knee.</p>
+
+                <h4 id="anterior" class="article_subheading">Anterior</h4>
+                <p><strong>Anterior:</strong> Directed toward the front of the body; positioned in front.</p>
+                <p>E.g. The bellybutton is <strong>anterior</strong> to the spine.</p>
+                
+                <h4 id="posterior" class="article_subheading">Posterior</h4>
+                <p><strong>Posterior:</strong> Directed toward the back of the body; positioned behind.</p>
+                <p>E.g. The spine is <strong>posterior</strong> to the bellybutton.</p>
+                
+                <h4 id="medial" class="article_subheading">Medial</h4>
+                <p><strong>Medial:</strong> Directed toward the midline of the body; positioned on the inner side.</p>
+                <p>E.g. The spine is <strong>medial</strong> to the arms.</p>
+                
+                <h4 id="lateral" class="article_subheading">Lateral</h4>
+                <p><strong>Lateral:</strong> Directed away from the midline of the body; positioned on the outer side.</p>
+                <p>E.g. The arms are <strong>lateral</strong> to the spine.</p>
+                
+                <h4 id="intermediate" class="article_subheading">Intermediate</h4>
+                <p><strong>Intermediate:</strong> Positioned between a more medial and a more lateral structure.</p>
+                <p>E.g. The sternum (breastbone) is <strong>intermediate</strong> between the clavicles (collar bones).</p>
+                
+                <h4 id="proximal" class="article_subheading">Proximal</h4>
+                <p><strong>Proximal:</strong> Closer to the origin of the body part or the origin of the attachment of a limb.</p>
+                <p>E.g. The knee is <strong>proximal</strong> to the ankle.</p>
+                
+                <h4 id="distal" class="article_subheading">Distal</h4>
+                <p><strong>Distal:</strong> Farther from the origin of a body part or point of attachment of a limb to the body trunk.</p>
+                <p>E.g. The ankle is <strong>distal</strong> to the knee.</p>
+                
+                <h4 id="superficial_external" class="article_subheading">Superficial/External</h4>
+                <p><strong>Superficial/External:</strong> Dorected towards, or at the body surface; positioned more external.</p>
+                <p>E.g. The skin is <strong>superfical</strong> to the bones of the skeleton.</p>
+                
+                <h4 id="deep_internal" class="article_subheading">Deep/Internal</h4>
+                <p><strong>Deep/Internal:</strong> Directed inwards from the body surface; positioned more internal.</p>
+                <p>E.g. The bones of the skeleton are <strong>deep</strong> to the skin.</p>
+                
+                <!-- Example image with FancyBox -->
+                 <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Blausen_0019_AnatomicalDirectionalReferences.png" data-fancybox="intro_to_anatomy" data-caption="Different anatomical terms used to describe body structures relative to other structures.">
+                            <img src="/Images/images/Blausen_0019_AnatomicalDirectionalReferences.png" alt="Anatomical Directions">
+                        </a>
+                        <figcaption>Image: Anatomical directions. BruceBlaus. Blausen.com staff (2014). "Medical gallery of Blausen Medical 2014". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.010. ISSN 2002-4436., CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons</figcaption>
+                    </figure>
+                 </div>
+            </section>
+
+            <section>
+                <h2 id="movement_terminology">Describing Movements</h2>
+                <p>Now lets utilise what we have covered so far and learn some terms that are used to describe different <strong>movements</strong>.</p>
+
+                <h4 id="flexion_extension" class="article_subheading">Flexion and Extension</h4>
+                <p><strong>Flexion</strong> describes <em>reducing</em> the angle between two body parts while <strong>extension</strong> describes <em>increasing</em> the angle. These two movements generally occur in the <strong>sagittal plane</strong> involving <a href="#anterior">anterior</a> or <a href="#posterior">posterior</a> movements of the neck, body trunk, or limbs.</p>
+                <p>For example, if you were to "flex" your biceps, it requires bringing your forearm towards the upper arm. This reduces the angle at the elbow and this is <strong>flexion</strong>. Straightening your arm back to a neutral position is <strong>extension</strong>.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Flexion_and_extension.jpg" data-fancybox="intro_to_anatomy" data-caption="Digram showing flexion and extension of various body parts.">
+                            <img src="/Images/images/Movements/Flexion_and_extension.jpg" alt="Flexion and Extensuin">
+                        </a>
+                        <figcaption>Image: Flexion and extension. <a href="https://commons.wikimedia.org/wiki/File:Flexion_and_extension.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+
+                <h4 id="adduction_abduction" class="article_subheading">Adduction and Abduction</h4>
+                <p><strong>Adduction</strong> describes bringing one body apart towards the <em>midline</em> while <strong>abduction</strong> describes moving it <em>away from the midline</em>.</p>
+                <p>For example, starting from the <a href="#anatomical_position">anatomical position</a>, the movement of bringing your arms out to the side at a 90 degree angle is <strong>abduction</strong>. This can easily be remembered as you are "abducting" your arms from the midline, so you are stealing your arms away from the midline. The opposite, bringing your arms from 90 degrees back towards the midline is <strong>adduction</strong>. This can also easily be remembered as you are "adding" your arms back to the side of your body.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Ab_add_and_circumduction.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing adduction, abduction, and circumducation of the arm.">
+                            <img src="/Images/images/Movements/Ab_add_and_circumduction.jpg" alt="Adduction and Abduction">
+                        </a>
+                        <figcaption>Image: Adduction and abduction of the arm. <a href="https://commons.wikimedia.org/wiki/File:Ab_add_and_circumduction.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="lateral_medial_rotation" class="article_subheading">Lateral and Medial Rotation</h4>
+                <p><strong>Lateral rotation</strong>, also called external rotation, describes the momevent that rotates a limbs anterior surface <strong>laterally</strong> (i.e. away from the midline).</p>
+                <p>The opposite, <strong>medial rotation</strong>, which is also called internal rotation, therefore is when the anterior surface of a limb is moved <strong>medially</strong>.</p>
+                <p>For example, if you were to rotate a striaght leg so that the toes were facing inwards (medially), this would be <strong>medial rotation</strong>. If you were to do the opposite and rotate the leg so the toes are now facing away from your body, this would be <strong>lateral rotation</strong>.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Rotation_CMX.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing lateral and medial rotation of the leg. Side-to-side movement of the head is just called rotation as shown.">
+                            <img src="/Images/images/Movements/Rotation_CMX.jpg" alt="Lateral and Medial Rotation">
+                        </a>
+                        <figcaption>Image: Lateral and medial rotation. <a href="https://commons.wikimedia.org/wiki/File:Rotation_CMX.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="pronation_supination" class="article_subheading">Pronation and Supination</h4>
+                <p>While <strong>pronation and supination</strong> can be easily confused with <a href="#lateral_medial_rotation">lateral and medial rotation</a>, they are distinct movements that you should understand.</p>
+                <p><strong>Supination</strong> describes the position of the forearm when it is in the <a href="#anatomical_position">anatomical position</a> with the palms facing forwards.</p>
+                <p><strong>Pronation</strong> describes moving the forearm from the <a href="#anatomical_position">anatomical position</a> so the palm now faces backwards.</p>
+                <p>These two terms can also be applied to the whole body. For example, a <strong>supine position</strong> is when a person lies flat on their back facing the ceiling. Meanwhile, lying flat, face down, is the <strong>prone position</strong>. This should be easy to remember for anyone who has ever had to do the <em>"prone hold"</em> exercise, as your body is in the prone position during this exercise.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Pronation_and_supination.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing pronation and supination of the forearm.">
+                            <img src="/Images/images/Movements/Pronation_and_supination.jpg" alt="Pronation and Supination">
+                        </a>
+                        <figcaption>Image: Pronation and supination of the forearm. <a href="https://commons.wikimedia.org/wiki/File:Pronation_and_supination.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="dorsiflexion_plantarflexion" class="article_subheading">Dorsiflexion and Plantar Flexion</h4>
+                <p>These two terms are specific to flexion and extension of the ankle. So rather than describing ankle movements as flexion or extension, bringing your toes up towards your shin, like walking on your heels, is called <strong>dorsiflexion</strong>. Meanwhile, pointing your toes down, walking on tippy toes, is called <strong>planter flexion</strong>.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Dorsiplantar.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing dorsiflexion and plantar flexion of the ankle.">
+                            <img src="/Images/images/Movements/Dorsiplantar.jpg" alt="Dorsiflexion and Plantar Flexion">
+                        </a>
+                        <figcaption>Image: Dorsiflexion and plantar flexion of the ankle. <a href="https://commons.wikimedia.org/wiki/File:Dorsiplantar.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="eversion_inversion" class="article_subheading">Eversion and Inversion</h4>
+                <p>Like <a href="#dorsiflexion_plantarflexion">dorsiflexion and plantar flexion</a>, <strong>eversion and inversion</strong> are also used to describe ankle movements.</p>
+                <p>The term <strong>eversion</strong> describes moving the inferior surface of your foot (sole) away from the median plane (laterally). The opposite movement, <strong>inversion</strong> describes rotating the foot so the inferior surface of your foot is now facing medially.</p>
+                <p>There is a greater range of motion when inverting the foot compared to when everting the foot, and as you learn the anatomy of the ankle you will understand why. You can give these movements a try and see for yourself!</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Eversion_and_inversion.jpg" data-fancybox="intro_to_anatomy" data-caption="Digram showing eversion and inversion of the ankle.">
+                            <img src="/Images/images/Movements/Eversion_and_inversion.jpg" alt="Eversion and Inversion">
+                        </a>
+                        <figcaption>Image: Eversion and inversion of the ankle. <a href="https://commons.wikimedia.org/wiki/File:Eversion_and_inversion.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="opposition_reposition" class="article_subheading">Opposition and Reposition</h4>
+                <p>These are movements of the hand. <strong>Opposition</strong> is the movement that brings the thumb together with the tip of the other fingers. Meanwhile, <strong>reposition</strong> is the movement that moves them away from each other. <strong>Thumb opposition</strong> is actually the combination of two other movements discussed above: <a href="#flexion_extension">flexion</a> and <a href="#adduction_abduction">abduction</a>.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Opposition_CMX.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing opposition of the thumb. Reposition is the opposite movement of opposition as described in the article.">
+                            <img src="/Images/images/Movements/Opposition_CMX.jpg" alt="Opposition of the Thumb">
+                        </a>
+                        <figcaption>Image: Opposition of the thumb. <a href="https://commons.wikimedia.org/wiki/File:Opposition_CMX.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="protraction_retraction" class="article_subheading">Protraction and Retraction</h4>
+                <p>These movements can be described using the scapule (shoulder blade) as an example.</p>
+                <p><strong>Protraction</strong> (or protrusion) describes the anterior and lateral movement of the scapula on the posterior thoracic wall. This movement alows the shoulder to move <a href="#anterior">anteriorly</a>, like when reaching for something in front of you.</p>
+                <p>The opposite movement, <strong>retraction</strong> (or retrusion) causes the scapula to move posteriorly and medially.</p>
+                <p>These terms can also be applied to other structures like the mandible (the bone that forms the lower jaw) for example.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Protraction_Retraction.png" data-fancybox="intro_to_anatomy" data-caption="Diagram showing protraction and retraction of the scapula.">
+                            <img src="/Images/images/Movements/Protraction_Retraction.png" alt="Protraction and Retraction">
+                        </a>
+                        <figcaption>Image: Protraction and retraction of the scapula. <a href="https://commons.wikimedia.org/wiki/File:Protraction_Retraction.png">Osteomyoamare This  diagram was created with Microsoft Word.</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                    <figure>
+                        <a href="/Images/images/Movements/Protrusion_and_retrusion.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing protraction (protrusion) and retraction (retrusion) of the mandible.">
+                            <img src="/Images/images/Movements/Protrusion_and_retrusion.jpg" alt="Protraction and Retraction">
+                        </a>
+                        <figcaption>Image: Protraction and retraction of the mandible. <a href="https://commons.wikimedia.org/wiki/File:Protrusion_and_retrusion.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="elevation_depression" class="article_subheading">Elevation and Depression</h4>
+                <p>These movements describe moving in the <a href="#superior">superior</a> or <a href="#inferior">inferior</a> direction.</p>
+                <p>For example, shrugging your shoulders uses these movements. Shrugging your shoulders up is <strong>elevation</strong> while drooping your shoulders is <strong>depression</strong>.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Elevation_and_Depression.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing elevation and depression of the mandible.">
+                            <img src="/Images/images/Movements/Elevation_and_Depression.jpg" alt="Elevation and Depression">
+                        </a>
+                        <figcaption>Image: Elevation and depression of the mandible. <a href="https://commons.wikimedia.org/wiki/File:Elevation_and_Depression.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+
+                <h4 id="circumduction" class="article_subheading">Circumduction</h4>
+                <p><strong>Circumduction</strong> refers to movement that occurs in a circular manner, where one end stays still while the distal end moves in a circular motion.</p>
+                <p>This movement uses a sequention combination of other movements already discussed: <a href="#flexion_extension">flexion</a>, <a href="#adduction_abduction">adduction</a>, <a href="#flexion_extension">extension</a>, <a href="#adduction_abduction">abduction</a>.</p>
+                <div class="flex-container">
+                    <figure>
+                        <a href="/Images/images/Movements/Ab_add_and_circumduction.jpg" data-fancybox="intro_to_anatomy" data-caption="Diagram showing adduction, abduction, and circumducation of the arm.">
+                            <img src="/Images/images/Movements/Ab_add_and_circumduction.jpg" alt="Adduction and Abduction">
+                        </a>
+                        <figcaption>Image: Adduction and abduction of the arm. <a href="https://commons.wikimedia.org/wiki/File:Ab_add_and_circumduction.jpg">Connexions</a>, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, via Wikimedia Commons</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <h2>Conclusion</h2>
+                <p>You should now have a good understanding of what the <a href="#anatomical_position">anatomical position</a> is, what the three <a href="#anatomical_planes">anatomical planes</a> are, and what different terms are used to describe structures position and movements.</p>
+                <p>As you begin to learn anatomy, you will realise knowing these basics is essential for being able to picture how different structures relate to each other. You can always refer back to this article if you need some revision, otherwise, good luck as you start your anatomical studies!</p>
+            </section>
+
+            <!-- References section -->
+            <section class="references">
+                <h2>References</h2>
+                <ul>
+                    <li>Reference 1</li>
+                    <li>Reference 2</li>
+                    <li>Reference 3</li>
+                    <li>This table has been adapted from the book "Human Anatomy and Physiology: International Edition" by Elaine N. Marieb and Katja N. Hoehn, published by Pearson Education, Limited, 2012.</li>
+
+                </ul>
+            </section>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript -->
+    <script src="/js/global/navbar.js" defer></script>
+    <script src="/js/global/footer.js" defer></script>
+    <script src="/js/global/text_size.js"></script>
+    <script src="/js/contet_page.js/references.js"></script>
+</body>
+</html>

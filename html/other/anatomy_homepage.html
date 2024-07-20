@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready for Radiology | Anatomy</title>
+
+    <link rel="icon" type="image/x-icon" href="/Images/logo-zip-file/png/justlogonobgd.png">
+
+    <!-- Preload stylesheets and images -->
+    <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/category_homepage.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/category_homepage.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script>
+        // Check theme preference and apply dark mode if necessary
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+
+            if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            } else {
+                const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDarkMode ? 'dark' : 'light');
+            }
+        })();
+    </script>
+
+    <!-- External libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- Anatomy Page Content -->
+    <main class="category-page">
+        <section class="custom-hero">
+            <div class="category-hero-content">
+                <h1>Anatomy Articles</h1>
+                <!-- Search Bar specific to Anatomy Articles -->
+                <div class="category-topbar">
+                    <form id="anatomy-search-form" class="anatomy-searchbar">
+                        <input id="anatomy-search-input" type="text" name="query" placeholder="Search Anatomy Articles...">
+                        <div class="anatomy-search" onclick="handleAnatomySearch()"></div>
+                    </form>
+                </div>
+                         
+            </div>
+        </section>
+
+        <!-- Article Previews Section -->
+        <section id="article-previews" class="article-previews">
+
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="/js/global/navbar.js" defer></script>
+    <script src="/js/global/footer.js" defer></script>
+    <script src="/js/global/text_size.js"></script>
+    <script src="/js/global/anatomy_homepage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/double-metaphone/1.0.1/double-metaphone.min.js"></script>
+</body>
+</html>

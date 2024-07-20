@@ -1,0 +1,124 @@
+/* Footer Style */
+
+.footer {
+    background: var(--color-background2);
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_columns {
+    background-color: var(--color-background2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer_column {
+    background-color: var(--color-background2);
+    padding: 0 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_column.logo {
+    text-align: center;
+}
+
+.footer_column.logo img {
+    max-width: 75px;
+    height: auto;
+}
+
+.footer_column h3 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+.footernav_page, .footernav_contact {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footernav_page li, .footernav_contact li {
+    margin-bottom: 8px;
+}
+
+.footernav_page a, .footernav_contact a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.3s ease;
+}
+
+.footernav_page a:hover, .footernav_contact a:hover {
+    color: var(--color-primary5);
+}
+
+.footernav_contact .bx {
+    margin-right: 4px;
+}
+
+.footer_column.contact .footernav a {
+    display: flex;
+    align-items: center;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    color: var(--color-text);
+    text-align: left;
+    padding-left: 150px;
+}
+
+/* Responsive Design */
+@media (max-width: 766px) {
+    .footer_columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_column {
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer_column.logo {
+        order: 3;
+    }
+
+    .footer_column.pages {
+        order: 1;
+    }
+
+    .footer_column.contact {
+        order: 2;
+    }
+
+    .footer-copyright {
+        order: 4;
+        margin-top: 10px;
+    }
+
+    .footer-copyright p {
+        text-align: left;
+        padding-left: 200px;
+    }
+}

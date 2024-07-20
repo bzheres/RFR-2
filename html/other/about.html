@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready For Radiology | About</title>
+
+    <link rel="icon" type="image/x-icon" href="/Images/logo-zip-file/png/justlogonobgd.png">
+
+    <!-- Preload stylesheets and images -->
+    <link rel="preload" href="/css/main.css" as="style">
+    <link rel="preload" href="/css/navbar.css" as="style">
+    <link rel="preload" href="/css/about.css" as="style">
+    <link rel="preload" href="/css/footer.css" as="style">
+    <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script>
+        // Check theme preference and apply dark mode if necessary
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+
+            if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            } else {
+                const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDarkMode ? 'dark' : 'light');
+            }
+        })();
+    </script>
+
+    <!-- External libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <main class="about-page">
+        <section class="about-hero">
+            <div class="about-container">
+                <h1>About Us</h1>
+                <p>Welcome to Ready For Radiology, a brand new, up-and-coming, online resource for radiology education. Founded by a passionate medical student, this platform is dedicated to providing users high-quality educational materials to help revise anatomy, radiology physics, and image interpretation.</p>
+            </div>
+        </section>
+
+        <section class="about-mission">
+            <div class="about-container">
+                <h2>Our Mission</h2>
+                <p>Our mission is to empower aspiring radiologists with the knowledge needed to start preparing for a career in this exciting area of medicine. We strive to make radiology education accessible, engaging, and effective for everyone, even those who are not interested in radiology! We would love for others with a passion for radiology, anatomy, or physics, to also get involved. If you want to contribute through either writing an article or providing contructive feedback, we would love to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="about-founder">
+            <div class="about-container">
+                <h2>Founder</h2>
+                <div class="founder-details">
+                    <img src="/Images/images/275459660_772894753685939_3062961696679476194_n.jpg" alt="Founder">
+                    <h3>Bzuayehu Heres</h3>
+                    <h5>Founder</h5>
+                    <p>I am a fourth-year medical student, based in Sydney, Australia, with a passion for the field of radiology. This passion led to the creation of "Ready for Radiology", where I aim to share my jounrey trying to become a radiologist with others by teaching anatomy, physics, and the basics of image interpretation. One day I hope to be a specialised radiologist in Australia, and as I undertake this journey, I hope I can inspire and teach others along the way.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-values">
+            <div class="about-container">
+                <h2>Our Values</h2>
+                <ul>
+                    <li>
+                        <h3>Attention to Detail</h3>
+                        <p>Radiologists need to be excellent at paying attention to detail. We recognise this and strive to provide detailed articles sharing the information you need to know while prepaing for radiology exams.</p>
+                    </li>
+                    <li>
+                        <h3>Keeping it Simple</h3>
+                        <p>Radiology, and the physics that come along with it, can become overwhelming. While providing all the information we believe you need, we aim to present content that is still easy to understand to help minimise the stress of studying.</p>
+                    </li>
+                    <li>
+                        <h3>Improvement</h3>
+                        <p>We aim to continuously improve in everything we do, from how our content is structured, to the resources we use, to our interaction with our community. This involves you! Get involved and write articles yourself, ask questions, and lets continue to improve together.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-history">
+            <div class="about-container">
+                <h2>Our History</h2>
+                <p>We currently have a very short history, being founded in 2024. However, we plan to continue providing educational content and hope to grow into one of your go-to resources.</p>
+            </div>
+        </section>
+
+        <section class="about-contact">
+            <div class="about-container">
+                <h2>Contact Us</h2>
+                <p>If you want to contribute, you have questions, or have  feedback for us, we would love to hear from you! Reach out to us via email at <a href="mailto:contact@readyforradiology.com">contact@readyforradiology.com</a> or follow us on social media.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/global/navbar.js"></script>
+    <script src="/js/global/footer.js"></script>
+    <script src="/js/global/text_size.js"></script>
+</body>
+</html>

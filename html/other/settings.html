@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <link rel="icon" type="image/x-icon" href="/Images/logo-zip-file/png/justlogonobgd.png">
+
+    <!-- Preload stylesheets and images -->
+    <link rel="preload" href="/css/main.css" as="style">
+    <link rel="preload" href="/css/navbar.css" as="style">
+    <link rel="preload" href="/css/settings.css" as="style">
+    <link rel="preload" href="/css/footer.css" as="style">
+    <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/settings.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script>
+        // Check theme preference and apply dark mode if necessary
+        (function() {
+            const storedTheme = localStorage.getItem('theme');
+
+            if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+            } else {
+                const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                document.documentElement.setAttribute('data-theme', prefersDarkMode ? 'dark' : 'light');
+            }
+        })();
+    </script>
+
+    <!-- External libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <header>
+        <h1>Settings</h1>
+    </header>
+
+    <main class="settings">
+        <section class="settings-section">
+            <h2>General Settings</h2>
+            <div class="settings-option">
+                <label for="theme">Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+
+            <div class="settings-option">
+                <label for="language">Language:</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="moretocome">More to come</option>
+                </select>
+            </div>
+
+            <div class="settings-option">
+                <label for="text-size">Text Size:</label>
+                <select id="text-size">
+                    <option value="normal">Normal</option>
+                    <option value="large">Large</option>
+                    <option value="larger">Larger</option>
+                    <option value="largest">Largest</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/global/navbar.js"></script>
+    <script src="/js/global/footer.js"></script>
+    <script src="/js/global/text_size.js"></script>
+</body>
+</html>

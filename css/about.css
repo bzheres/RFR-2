@@ -1,0 +1,159 @@
+
+/* Container */
+.about-container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.about-hero {
+    background-color: var(--color-primary4);
+    color: var(--color-text);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-hero h1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.about-hero p {
+    font-size: var(--body-font-size);
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Mission Section */
+.about-mission {
+    padding: 50px 20px;
+    background-color: var(--color-background1);
+    color: var(--color-text);
+    text-align: center;
+}
+
+.about-mission h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.about-mission p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+/* Team Section */
+.about-founder {
+    padding: 50px 20px;
+    background-color: var(--color-background2);
+    color: var(--color-text);
+    text-align: center;
+}
+
+.about-founder h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+
+}
+
+.founder-details img {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.founder-details h3 {
+    font-size: var(--h4-font-size);
+    margin-bottom: 10px;
+}
+
+.founder-details h5 {
+    font-size: var(--h5-font-size);
+}
+
+.founder-details p {
+    font-size: var(--body-font-size);
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+/* Values Section */
+.about-values {
+    padding: 50px 20px;
+    background-color: var(--color-background1);
+    color: var(--color-text);
+}
+
+.about-values h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-values li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.about-values h3 {
+    font-size: var(--h3-font-size);
+    margin-bottom: 10px;
+}
+
+.about-values p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+/* History Section */
+.about-history {
+    padding: 50px 20px;
+    background-color: var(--color-background2);
+    color: var(--color-text);
+    text-align: center;
+}
+
+.about-history h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.about-history p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.about-contact {
+    padding: 50px 20px;
+    background-color: var(--color-background1);
+    text-align: center;
+}
+
+.about-contact h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.about-contact p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+.about-contact a {
+    color: var(--color-primary3);
+    text-decoration: none;
+}
+
+.about-contact a:hover {
+    text-decoration: underline;
+}
+
