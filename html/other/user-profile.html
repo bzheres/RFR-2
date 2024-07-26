@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="path/to/your/styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <section id="profile">
+            <h1>User Profile</h1>
+            <div id="user-info">
+                <!-- User information will be populated here -->
+            </div>
+            <button id="logout-button">Logout</button>
+        </section>
+    </main>
+
+    <script src="/js/global/navbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const user = netlifyIdentity.currentUser();
+            if (user) {
+                document.getElementById('user-info').innerText = `Welcome, ${user.user_metadata.full_name}`;
+            }
+
+            document.getElementById('logout-button').addEventListener('click', function() {
+                netlifyIdentity.logout();
+            });
+
+            netlifyIdentity.on('logout', () => {
+                window.location.href = '/'; // Redirect to homepage after logout
+            });
+        });
+    </script>
+</body>
+</html>
