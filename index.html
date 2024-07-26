@@ -3,139 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ready for Radiology | Home</title>
+    <title>Coming Soon</title>
+    <style>
+        .coming-soon-body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0E1420;
+            color: #F7F7F8;
+        }
 
-    <link rel="icon" type="image/x-icon" href="../../images/logo-zip-file/png/justlogonobgd.png"> <!-- Updated path for favicon -->
-    
-    <!-- Preload stylesheets and images -->
-    <link rel="preload" href="/css/main.css" as="style"> <!-- Updated path for preload -->
-    <link rel="preload" href="/css/navbar.css" as="style"> <!-- Updated path for preload -->
-    <link rel="preload" href="/css/footer.css" as="style"> <!-- Updated path for preload -->
-    <link rel="preload" href="/images/logo-zip-file/png/logo-no-background.png" as="image"> <!-- Updated path for preload -->
+        .coming-soon-container {
+            text-align: center;
+        }
 
-    <!-- External stylesheets -->
-    <link rel="stylesheet" href="/css/main.css"> <!-- Updated path for stylesheet -->
-    <link rel="stylesheet" href="/css/navbar.css"> <!-- Updated path for stylesheet -->
-    <link rel="stylesheet" href="/css/footer.css"> <!-- Updated path for stylesheet -->
+        .coming-soon-title {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
 
+        .coming-soon-message {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        .coming-soon-countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1em;
+        }
+
+        .coming-soon-countdown div {
+            font-size: 2em;
+        }
+
+        .coming-soon-countdown span {
+            font-weight: bold;
+            display: block;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body class="coming-soon-body">
+    <div class="coming-soon-container">
+        <h1 class="coming-soon-title">Coming Soon</h1>
+        <p class="coming-soon-message">Our Ready for Radiology website is under construction. We'll be here soon with our new awesome radiology site. Stay tuned!</p>
+        <div id="coming-soon-countdown" class="coming-soon-countdown">
+            <div><span id="coming-soon-days"></span>Days</div>
+            <div><span id="coming-soon-hours"></span>Hours</div>
+            <div><span id="coming-soon-minutes"></span>Minutes</div>
+            <div><span id="coming-soon-seconds"></span>Seconds</div>
+        </div>
+    </div>
 
     <script>
-        // Check theme preference and apply dark mode if necessary
-        (function() {
-            const storedTheme = localStorage.getItem('theme');
+        // Set the date we're counting down to
+        var countDownDate = new Date("Dec 31, 2024 00:00:00").getTime();
 
-            if (storedTheme) {
-                document.documentElement.setAttribute('data-theme', storedTheme);
-            } else {
-                const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                document.documentElement.setAttribute('data-theme', prefersDarkMode ? 'dark' : 'light');
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result in the elements with id="coming-soon-days", "coming-soon-hours", "coming-soon-minutes", "coming-soon-seconds"
+            document.getElementById("coming-soon-days").innerHTML = days;
+            document.getElementById("coming-soon-hours").innerHTML = hours;
+            document.getElementById("coming-soon-minutes").innerHTML = minutes;
+            document.getElementById("coming-soon-seconds").innerHTML = seconds;
+            
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("coming-soon-countdown").innerHTML = "WE MIGHT NEED SOME MORE TIME. COMING SOON!";
             }
-        })();
+        }, 1000);
     </script>
-
-    <!-- External libraries -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-</head>
-<body>
-
-    <div id="navbar"></div>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Discover Radiology with <span class="styled-text">Ready for Radiology</span></h1>
-            <p>Sign up for <span class="styled-text-blackbg">FREE</span> and prepare for a successful career in radiology</p>
-            <a href="/html/other/navbar.html#myModal" class="join_button" id="joinup">Sign Up</a>
-        </div>
-        <div class="hero-video">
-            <video src="/Images/video/4122-177145595.mp4" autoplay muted loop>
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-    
-
-    <!-- Introduction Section -->
-    <section class="introduction">
-        <div class="intro-content">
-            <h2>About Ready for Radiology</h2>
-            <p>Ready for Radiology is a <span class="styled-text-graybg">brand new</span> resource for comprehensive radiology education. As I progress through my study and pursue a career in radiology, I share detailed articles covering anatomy, physics, and image interpretation. Each article is easy to read while maintaing important detail so <span class="styled-text-graybg">you can prepare for your future too!</span></p>
-        </div>
-    </section>
-
-    <!-- Articles Section -->
-    <section class="articles">
-        <h2>Featured Articles</h2>
-        <div class="article-cards">
-            <!-- Example Card (Repeat as Needed) -->
-            <div class="card">
-                <img src="/Images/images/nervous_3880723.png" alt="Anatomy Article Image">
-                <div class="card-content">
-                    <h3>Introduction to the Basics of Anatomy</h3>
-                    <p>Understanding the language of anatomy is an important step for building a solid foundation in your anatomy studies.</p>
-                    <a href="/html/anatomy/intro to anatomy/intro_to_anatomy.html" class="btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="/Images/images/atom_12007447.png" alt="Article Image">
-                <div class="card-content">
-                    <h3>Introduction to Radiology Physics</h3>
-                    <p>Learn the core principles of radiology physics from x-ray generation to the complexities of MRI physics.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="/Images/images/x-ray_6454805.png" alt="Article Image">
-                <div class="card-content">
-                    <h3>Introduction to Image Interpretation</h3>
-                    <p>Develop approaches to numerous structures and modalities from basic chest radiographs to brain MRI.</p>
-                    <a href="/html/image interpretation/intro to image interpretation/intro_to_image_interpretation.html" class="btn">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Section -->
-    <section class="product">
-        <div class="product-content">
-            <h2>ANKI</h2>
-            <img src="/Images/images/exam-2428208_640.png" alt="Product Image">
-            <div class="product-details">
-                <div class="product-info">
-                    <h3>Anatomy Anki Deck</h3>
-                    <p>Stay tuned for a <span class="styled-text-graybg">comprehensive anki deck</span> covering all the anatomy you need to know.</p><p>Perfect for exam preparation or revision.</p>
-                    <a href="#" class="btn">Download Available Soon!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form Section -->
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>If you want to contribute, you have questions, or have feedback for us, we would love to hear from you!</p>
-        <form action="/submit-contact-form" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
-    <footer id="footer"></footer>
-
-    <script src="/js/global/navbar.js" defer></script>
-    <script src="/js/global/footer.js" defer></script>
-    <script src="/js/global/text_size.js"></script>
 </body>
 </html>
