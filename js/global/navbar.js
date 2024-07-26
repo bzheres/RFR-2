@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function setupNavbarFunctionality() {
+    // Initialize Netlify Identity
+    setupNetlifyIdentity();
+
     // Theme toggle setup
     const themeToggle = document.getElementById('theme-toggle');
     let currentTheme = localStorage.getItem('theme') || 'light';
@@ -198,4 +201,47 @@ function updateThemeDropdown(theme) {
     if (themeDropdown) {
         themeDropdown.value = theme;
     }
+}
+
+function setupNetlifyIdentity() {
+    netlifyIdentity.on('init', user => {
+        console.log('Netlify Identity user:', user);
+        if (user) {
+            // User is logged in, perform actions based on user state
+            handleUserLoggedIn(user);
+        }
+    });
+
+    netlifyIdentity.on('login', user => {
+        console.log('Login event:', user);
+        document.getElementById('myModal').style.display = 'none';
+        handleUserLoggedIn(user);
+    });
+
+    netlifyIdentity.on('logout', () => {
+        console.log('Logout event');
+        handleUserLoggedOut();
+    });
+
+    netlifyIdentity.on('error', err => {
+        console.error('Error event:', err);
+    });
+
+    netlifyIdentity.on('open', () => {
+        console.log('Widget opened');
+    });
+
+    netlifyIdentity.on('close', () => {
+        console.log('Widget closed');
+    });
+
+    netlifyIdentity.init();
+}
+
+function handleUserLoggedIn(user) {
+    // Perform actions like showing a "Save Article" button, etc.
+}
+
+function handleUserLoggedOut() {
+    // Perform actions like hiding user-specific options
 }
