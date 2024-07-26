@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon</title>
+
+    <link rel="icon" type="image/x-icon" href="../../images/logo-zip-file/png/justlogonobgd.png"> <!-- Updated path for favicon -->
+
     <style>
+        /* Base styles */
         .coming-soon-body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -19,39 +23,79 @@
 
         .coming-soon-container {
             text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .coming-soon-title {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 0.5em;
         }
 
         .coming-soon-message {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 1em;
+        }
+
+        .txt {
+            color: #a23a82;
+            font-weight: bold;
+            text-decoration: underline;
         }
 
         .coming-soon-countdown {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 1em;
         }
 
         .coming-soon-countdown div {
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
         .coming-soon-countdown span {
             font-weight: bold;
             display: block;
-            font-size: 3em;
+            font-size: 2.5em;
+        }
+
+        /* Media Queries */
+        @media (min-width: 769px) {
+            .coming-soon-countdown {
+                flex-direction: row;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .coming-soon-title {
+                font-size: 2em;
+            }
+
+            .coming-soon-message {
+                font-size: 1em;
+            }
+
+            .coming-soon-countdown {
+                flex-direction: column;
+                gap: 0.5em;
+            }
+
+            .coming-soon-countdown div {
+                font-size: 1.2em;
+            }
+
+            .coming-soon-countdown span {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body class="coming-soon-body">
     <div class="coming-soon-container">
         <h1 class="coming-soon-title">Coming Soon</h1>
-        <p class="coming-soon-message">Our Ready for Radiology website is under construction. We'll be here soon with our new awesome radiology site. Stay tuned!</p>
+        <p class="coming-soon-message">Our <span class="txt">Ready for Radiology</span> website is under construction.</p>
+        <p>New radiology content will be here soon, so stay tuned!</p>
         <div id="coming-soon-countdown" class="coming-soon-countdown">
             <div><span id="coming-soon-days"></span>Days</div>
             <div><span id="coming-soon-hours"></span>Hours</div>
