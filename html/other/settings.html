@@ -10,14 +10,14 @@
     <!-- Preload stylesheets and images -->
     <link rel="preload" href="/css/main.css" as="style">
     <link rel="preload" href="/css/navbar.css" as="style">
-    <link rel="preload" href="/css/settings.css" as="style">
+    <link rel="preload" href="/css/settings_fixed.css" as="style">
     <link rel="preload" href="/css/footer.css" as="style">
     <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
 
     <!-- External stylesheets -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/settings.css">
+    <link rel="stylesheet" href="/css/settings_fixed.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <script>
@@ -46,9 +46,10 @@
         <h1>Settings</h1>
     </header>
 
-    <main class="settings">
+    <main>
         <section class="settings-section">
             <h2>General Settings</h2>
+
             <div class="settings-option">
                 <label for="theme">Theme:</label>
                 <select id="theme">
@@ -83,5 +84,11 @@
     <script src="/js/global/text_size.js"></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
+    <script>
+        // Ensure styles are applied before showing content
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
 </body>
 </html>

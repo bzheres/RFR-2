@@ -1,5 +1,4 @@
 /* Footer Style */
-
 .footer {
     background: var(--color-background2);
     padding: 20px 0;
@@ -20,6 +19,21 @@
     margin: 0 auto;
 }
 
+/* Reserve space for logo */
+.footer_column.logo {
+    text-align: center;
+    min-width: 75px; /* Reserve space for logo width */
+    min-height: 75px; /* Reserve space for logo height */
+}
+
+/* Ensure the logo image maintains the reserved space */
+.footer_column.logo img {
+    max-width: 75px;
+    height: auto;
+    min-width: 75px; /* Match the min-width of its container */
+    min-height: 75px; /* Match the min-height of its container */
+}
+
 .footer_column {
     background-color: var(--color-background2);
     padding: 0 20px;
@@ -27,15 +41,6 @@
     text-align: left;
     justify-content: center;
     align-items: center;
-}
-
-.footer_column.logo {
-    text-align: center;
-}
-
-.footer_column.logo img {
-    max-width: 75px;
-    height: auto;
 }
 
 .footer_column h3 {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ready for Radiology | Physics</title>
+    <title>Ready for Radiology | Anatomy</title>
 
     <link rel="icon" type="image/x-icon" href="/Images/logo-zip-file/png/justlogonobgd.png">
 
@@ -11,13 +11,13 @@
     <link rel="preload" href="/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="/css/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="/css/category_homepage.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/anat_phys_ii_homepages.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
 
     <!-- External stylesheets -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/category_homepage.css">
+    <link rel="stylesheet" href="/css/anat_phys_ii_homepages.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <script>
@@ -38,32 +38,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
 </head>
 <body>
-
     <div id="navbar"></div>
 
-    <!-- Anatomy Page Content -->
-    <main class="category-page">
-        <section class="custom-hero">
+    <header>
+        <div class="custom-hero">
             <div class="category-hero-content">
                 <h1>Physics Articles</h1>
-                <!-- Search Bar specific to Anatomy Articles -->
-                <div class="category-topbar">
-                    <form id="anatomy-search-form" class="anatomy-searchbar">
-                        <input id="anatomy-search-input" type="text" name="query" placeholder="Search Physics Articles...">
-                        <div class="anatomy-search" onclick="handleAnatomySearch()"></div>
-                    </form>
-                </div>
-                         
             </div>
-        </section>
+            <div class="category-topbar">
+                <div class="anatomy-searchbar">
+                    <input id="anatomy-search-input" type="text" placeholder="Search Physics Articles...">
+                    <div class="anatomy-search"></div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <!-- Article Previews Section -->
+    <main>
         <section id="article-previews" class="article-previews">
-
+            <!-- Dynamically loaded articles will appear here -->
         </section>
     </main>
+    
 
     <footer id="footer"></footer>
 

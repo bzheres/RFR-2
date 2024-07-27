@@ -1,4 +1,9 @@
-/* Settings Page Styles */
+main {
+    padding: 20px;
+    min-height: 600px; /* Adjust based on your design needs */
+    min-width: 100%; /* Ensures it takes up full width */
+    box-sizing: border-box; /* Includes padding in the height/width calculations */
+}
 
 header {
     margin-top: 80px;
@@ -12,17 +17,8 @@ header h1 {
     font-size: var(--h1-font-size);
 }
 
-/* Main Settings Content */
-.settings {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
 .settings-section {
     background-color: var(--color-background1);
-    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -52,32 +48,6 @@ header h1 {
     background-color: var(--color-background2);
     color: var(--color-text);
 }
-
-.settings-option select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 12l-7-7h14z'/%3E%3C/svg%3E");
-    background-position: right 10px center;
-    background-repeat: no-repeat;
-    background-size: 12px;
-    cursor: pointer;
-}
-
-.settings-option input[type="checkbox"] {
-    cursor: pointer;
-}
-
-.settings-option input[type="checkbox"]:checked {
-    background-color: var(--color-primary3);
-    color: black;
-}
-
-.settings-option input[type="checkbox"]:hover {
-    background-color: var(--color-primary4);
-}
-
-
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
