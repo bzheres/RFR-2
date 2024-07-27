@@ -7,7 +7,12 @@ function fetchSearchResults(query) {
     const imageInterpretationArticlesURL = '../../json files/image_interpretation_articles.json';
 
     // Fetch all JSON data concurrently
-    Promise.all([
+    //PLEASE CHECK HERE
+    //THIS IS WHERE I CHANGED "Promise.all" to PROMISE.all" TO BREAK THE SEARCH WHILE THE SITE IS BEING PREPARED
+    
+    // SEE ABOVE
+    //SEE ABOVE
+    PROMISE.all([
         fetch(anatomyArticlesURL).then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to fetch ${anatomyArticlesURL}: ${response.statusText}`);
