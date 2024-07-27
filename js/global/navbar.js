@@ -65,10 +65,31 @@ function setupNavbarFunctionality() {
 
     if (profileButton) {
         profileButton.addEventListener('click', () => {
-            netlifyIdentity.open(); // Open Netlify Identity Widget modal
+            const container = createContainer();
+            netlifyIdentity.open();
+            // Close the mobile menu when the profile button is clicked
+            const navbarMenu = document.querySelector('.navbar_menu');
+            if (navbarMenu && navbarMenu.classList.contains('active')) {
+                navbarMenu.classList.remove('active');
+            }
         });
     } else {
         console.error('Profile button not found.');
+    }
+
+    // Create or get the container for the widget
+    function createContainer() {
+        let container = document.getElementById('netlify-identity-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'netlify-identity-container';
+            container.style.position = 'fixed';
+            container.style.top = '100px'; // Adjust based on your navbar height
+            container.style.zIndex = '9999'; // Ensure it's above other elements
+            container.style.width = '100%'; // Adjust width if needed
+            document.body.appendChild(container);
+        }
+        return container;
     }
 
     // Theme toggle setup
@@ -154,9 +175,13 @@ function updateThemeDropdown(theme) {
 function updateUserStatus(user) {
     const profileButton = document.getElementById('profilebutton');
     if (user) {
-        profileButton.innerHTML = `<i class="fa fa-user-md" aria-hidden="true"></i> ${user.email}`;
+        profileButton.innerHTML = '<i class="fa fa-user-md" aria-hidden="true"></i>';
+        profileButton.style.backgroundColor = 'var(--color-secondary4)'; // Change button background for logged-in 
+        profileButton.style.color = 'var(--color-background1)';
     } else {
         profileButton.innerHTML = '<i class="fa fa-user-md" aria-hidden="true"></i>';
+        profileButton.style.backgroundColor = 'var(--color-background2)'; // Default button background for logged-out 
+        profileButton.style.color = 'var(--color-text)';
     }
 }
 
@@ -164,4 +189,3 @@ function checkUserStatus() {
     const currentUser = netlifyIdentity.currentUser();
     updateUserStatus(currentUser);
 }
-
