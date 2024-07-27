@@ -1,3 +1,8 @@
+// Add the Netlify Identity Widget script
+const netlifyIdentityScript = document.createElement('script');
+netlifyIdentityScript.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+document.head.appendChild(netlifyIdentityScript);
+
 document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll("[id='navbar']");
     elements.forEach(el => {
@@ -27,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 // Call setup functions after HTML insertion
                 setupNavbarFunctionality();
+                checkUserStatus();
             })
             .catch(error => {
                 console.error('Error fetching navbar HTML:', error);
@@ -35,6 +41,36 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function setupNavbarFunctionality() {
+    // Initialize Netlify Identity
+    netlifyIdentity.on('init', user => {
+        console.log('Netlify Identity Widget initialized');
+        updateUserStatus(user);
+    });
+
+    // Listen for login events
+    netlifyIdentity.on('login', user => {
+        console.log('User logged in:', user);
+        updateUserStatus(user);
+        netlifyIdentity.close();
+    });
+
+    // Listen for logout events
+    netlifyIdentity.on('logout', () => {
+        console.log('User logged out');
+        updateUserStatus(null);
+    });
+
+    // Profile button setup
+    const profileButton = document.getElementById('profilebutton');
+
+    if (profileButton) {
+        profileButton.addEventListener('click', () => {
+            netlifyIdentity.open(); // Open Netlify Identity Widget modal
+        });
+    } else {
+        console.error('Profile button not found.');
+    }
+
     // Theme toggle setup
     const themeToggle = document.getElementById('theme-toggle');
     let currentTheme = localStorage.getItem('theme') || 'light';
@@ -62,9 +98,6 @@ function setupNavbarFunctionality() {
             navbarMenu.classList.toggle('active');
         });
     }
-
-    // Modal setup function
-    setupModal();
 
     // Handle theme change from settings dropdown
     const themeDropdown = document.getElementById('theme');
@@ -111,91 +144,24 @@ function handleSearch(event) {
     }
 }
 
-function setupModal() {
-    // Modal functionality
-    const modal = document.getElementById('myModal');
-    const profileButton = document.getElementById('profilebutton');
-    const joinupButton = document.getElementById('joinup'); // Added joinupButton
-    const closeButton = modal.querySelector('.close');
-
-    if (profileButton && closeButton) {
-        profileButton.addEventListener('click', function () {
-            openModal();
-        });
-    } else {
-        console.error('Profile button or close button not found in modal setup.');
-    }
-
-    if (joinupButton && closeButton) {
-        joinupButton.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default action of the link
-            openModal();
-        });
-    } else {
-        console.error('Joinup button or close button not found in modal setup.');
-    }
-
-    closeButton.addEventListener('click', function () {
-        modal.style.display = 'none';
-    });
-
-    window.addEventListener('click', function (event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    });
-
-    // Tab switching functionality
-    const tabs = document.querySelectorAll('.tab a');
-
-    tabs.forEach(tab => {
-        tab.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = this.getAttribute('href').substring(1); // Get tab ID without '#'
-            showTab(target); // Display the clicked tab
-        });
-    });
-}
-
-function openModal() {
-    const modal = document.getElementById('myModal');
-    if (modal) {
-        modal.style.display = 'block';
-        showTab('signup'); // Show the signup tab by default
-    } else {
-        console.error('Modal element not found.');
-    }
-}
-
-function showTab(tabName) {
-    // Hide all tab contents
-    const tabContents = document.querySelectorAll('.tab-content > div');
-    tabContents.forEach(content => {
-        if (content.id === tabName) {
-            content.style.display = 'block';
-        } else {
-            content.style.display = 'none';
-        }
-    });
-
-    // Activate current tab
-    const tabGroup = document.querySelector('.tab-group');
-    const activeTab = tabGroup.querySelector('.active');
-    if (activeTab) {
-        activeTab.classList.remove('active');
-    }
-
-    const newActiveTab = tabGroup.querySelector(`a[href="#${tabName}"]`);
-    if (newActiveTab) {
-        newActiveTab.parentNode.classList.add('active');
-    } else {
-        console.error(`Tab ${tabName} not found.`);
-    }
-}
-
 function updateThemeDropdown(theme) {
     const themeDropdown = document.getElementById('theme');
     if (themeDropdown) {
         themeDropdown.value = theme;
     }
 }
+
+function updateUserStatus(user) {
+    const profileButton = document.getElementById('profilebutton');
+    if (user) {
+        profileButton.innerHTML = `<i class="fa fa-user-md" aria-hidden="true"></i> ${user.email}`;
+    } else {
+        profileButton.innerHTML = '<i class="fa fa-user-md" aria-hidden="true"></i>';
+    }
+}
+
+function checkUserStatus() {
+    const currentUser = netlifyIdentity.currentUser();
+    updateUserStatus(currentUser);
+}
+
