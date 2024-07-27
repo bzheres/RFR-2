@@ -75,7 +75,8 @@
                 <div class="card-content">
                     <h3>Introduction to the Basics of Anatomy</h3>
                     <p>Understanding the language of anatomy is an important step for building a solid foundation in your anatomy studies.</p>
-                    <a href="/html/anatomy/intro to anatomy/intro_to_anatomy.html" class="btn">Read More</a>
+                    <!-- Removed Link (/html/anatomy/intro to anatomy/intro_to_anatomy.html) Util Ready-->
+                    <a href="/index_waiting.html" class="btn">Read More</a>
                 </div>
             </div>
 
@@ -84,7 +85,7 @@
                 <div class="card-content">
                     <h3>Introduction to Radiology Physics</h3>
                     <p>Learn the core principles of radiology physics from x-ray generation to the complexities of MRI physics.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="/index_waiting.html" class="btn">Read More</a>
                 </div>
             </div>
 
@@ -93,7 +94,8 @@
                 <div class="card-content">
                     <h3>Introduction to Image Interpretation</h3>
                     <p>Develop approaches to numerous structures and modalities from basic chest radiographs to brain MRI.</p>
-                    <a href="/html/image interpretation/intro to image interpretation/intro_to_image_interpretation.html" class="btn">Read More</a>
+                   <!--Removed Link (/html/image interpretation/intro to image interpretation/intro_to_image_interpretation.html) Until Ready-->
+                    <a href="/index_waiting.html" class="btn">Read More</a>
                 </div>
             </div>
         </div>
@@ -108,7 +110,7 @@
                 <div class="product-info">
                     <h3>Anatomy Anki Deck</h3>
                     <p>Stay tuned for a <span class="styled-text-graybg">comprehensive anki deck</span> covering all the anatomy you need to know.</p><p>Perfect for exam preparation or revision.</p>
-                    <a href="#" class="btn">Download Available Soon!</a>
+                    <a href="/index_waiting.html" class="btn">Download Available Soon!</a>
                 </div>
             </div>
         </div>
@@ -118,19 +120,22 @@
     <section class="contact">
         <h2>Contact Me</h2>
         <p>If you want to contribute, you have questions, or have feedback for us, we would love to hear from you!</p>
-        <form action="/submit-contact-form" method="POST">
+        <form name="contact" method="POST" netlify>
+            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="redirect" value="/html/forms/form-submission.html">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-
+    
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
+    
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-
+    
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
+    
 
     <footer id="footer"></footer>
 

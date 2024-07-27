@@ -33,7 +33,7 @@
         }
 
         .coming-soon-message {
-            font-size: 1.2em;
+            font-size: 1.5em;
             margin-bottom: 1em;
         }
 
@@ -43,11 +43,23 @@
             text-decoration: underline;
         }
 
+        .coming-soon-preview-link {
+            color: #F7F7F8;
+            font-size: 1em;
+            display: block;
+            margin-top: 1em; /* Add space above the link */
+        }
+
+        .coming-soon-container a:hover {
+            color: #a23a82
+        }
+
         .coming-soon-countdown {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1em;
+            margin-bottom: 1em; /* Space below the countdown */
         }
 
         .coming-soon-countdown div {
@@ -95,15 +107,14 @@
     <div class="coming-soon-container">
         <h1 class="coming-soon-title">Coming Soon</h1>
         <p class="coming-soon-message">Our <span class="txt">Ready for Radiology</span> website is under construction.</p>
-        <p>New radiology content will be here soon, so stay tuned!</p>
+        <p>New radiology content will be here soon!</p>
         <div id="coming-soon-countdown" class="coming-soon-countdown">
             <div><span id="coming-soon-days"></span>Days</div>
             <div><span id="coming-soon-hours"></span>Hours</div>
             <div><span id="coming-soon-minutes"></span>Minutes</div>
             <div><span id="coming-soon-seconds"></span>Seconds</div>
-
-            <a href="/index_waiting.html">link</a>
         </div>
+        <a class="coming-soon-preview-link" href="/index_waiting.html">Preview and Sign Up Early!</a>
     </div>
 
     <script>

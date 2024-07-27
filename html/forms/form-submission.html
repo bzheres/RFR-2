@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings</title>
+    <title>Thank You</title>
 
     <link rel="icon" type="image/x-icon" href="/Images/logo-zip-file/png/justlogonobgd.png">
 
     <!-- Preload stylesheets and images -->
     <link rel="preload" href="/css/main.css" as="style">
     <link rel="preload" href="/css/navbar.css" as="style">
-    <link rel="preload" href="/css/settings.css" as="style">
     <link rel="preload" href="/css/footer.css" as="style">
     <link rel="preload" href="/Images/logo-zip-file/png/logo-no-background.png" as="image">
 
     <!-- External stylesheets -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/settings.css">
     <link rel="stylesheet" href="/css/footer.css">
 
     <script>
@@ -40,48 +38,25 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 <body>
-    <div id="navbar"></div>
-
     <header>
-        <h1>Settings</h1>
+        <nav id="navbar"></nav>
     </header>
 
-    <main class="settings">
-        <section class="settings-section">
-            <h2>General Settings</h2>
-            <div class="settings-option">
-                <label for="theme">Theme:</label>
-                <select id="theme">
-                    <option value="light">Light</option>
-                    <option value="dark">Dark</option>
-                </select>
-            </div>
-
-            <div class="settings-option">
-                <label for="language">Language:</label>
-                <select id="language">
-                    <option value="en">English</option>
-                </select>
-            </div>
-
-            <div class="settings-option">
-                <label for="text-size">Text Size:</label>
-                <select id="text-size">
-                    <option value="normal">Normal</option>
-                    <option value="large">Large</option>
-                    <option value="larger">Larger</option>
-                    <option value="largest">Largest</option>
-                </select>
+    <main>
+        <section class="thank-you">
+            <div class="thank-you-content">
+                <h1>Thank You!</h1>
+                <p>Your message has been sent successfully. We appreciate your feedback and will get back to you soon.</p>
+                <a href="/index_waiting.html" class="btn">Return to Site Preview</a>
             </div>
         </section>
     </main>
 
-    <div id="footer"></div>
+    <footer id="footer"></footer>
 
     <script src="/js/global/navbar.js"></script>
     <script src="/js/global/footer.js"></script>
     <script src="/js/global/text_size.js"></script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
 </body>
 </html>
