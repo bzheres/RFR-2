@@ -27,6 +27,7 @@
     --color-background3: #1C1C1C;
 
     --color-text: #000000;
+    --color-text2: #f9f9f9;
 
     /* Default text sizes */
     --body-font-size: 16px;
@@ -56,7 +57,8 @@
     --color-background2: #333333;
     --color-background3: #FAFAFA;
 
-    --color-text: #f9f9f9; 
+    --color-text: #f9f9f9;
+    --color-text2: #000000; 
 }
 
 
@@ -408,7 +410,7 @@ body.fade-out {
     margin-bottom: 20px;
 }
 
-.product-info .heropage-internal-link {
+.product-info .heropage-download-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--color-primary3);
@@ -418,20 +420,19 @@ body.fade-out {
     transition: background-color 0.3s ease;
 }
 
-.product-info .heropage-internal-link:hover {
+.product-info .heropage-download-link:hover {
     background-color: var(--color-secondary5);
 }
 
-.product-info .heropage-external-link {
+.product-info .heropage-styled-link {
     color: var(--color-primary3);
     text-decoration: underline;
-    
+    font-size: 18px;
     font-weight: bold;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
 
-.product-info .heropage-external-link:hover {
+.product-info .heropage-styled-link:hover {
     color: var(--color-secondary2);
 }
 
@@ -442,10 +443,122 @@ body.fade-out {
     }
 }
 
+/* Recommended Resources */
+.resources {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: var(--color-background1);
+}
+
+.resources-content {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-background2);
+    color: var(--color-text);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 20px; /* Default margin for small screens */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.resources-content h2 {
+    font-size: var(--h2-font-size);
+    margin-bottom: 20px;
+}
+
+.resources-content p {
+    font-size: var(--h4-font-size);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resources-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align text to the left within the container */
+    margin: 0 auto 20px; /* Center the list and add bottom margin */
+    max-width: 600px; /* Optional: Limit the width of the list */
+    padding: 0 20px; /* Add padding to prevent content overflow */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.resources-content ul li {
+    font-size: var(--h4-font-size);
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 1.2em;
+    text-indent: -1.2em; /* Outdent the bullet point */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align children to the start */
+}
+
+.resources-content ul li::before {
+    
+    color: var(--color-primary);
+    font-size: var(--h4-font-size);
+    margin-right: 10px;
+    display: inline-block;
+    width: 1em; /* Align the bullet points */
+}
+
+.resources-content ul li a {
+    display: inline; /* Ensure links are inline */
+}
+
+.resources-content ul li p {
+    margin: 0;
+    padding-left: 1.2em; /* Match the padding-left of li */
+    text-indent: -1.2em; /* Outdent the text */
+}
+
+.resources-content .heropage-styled-link {
+    color: var(--color-primary3);
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.resources-content .heropage-styled-link:hover {
+    color: var(--color-secondary2);
+}
+
+.internal-link {
+    font-weight: bold;
+    color: var(--color-secondary2);
+    text-decoration: none;
+}
+
+.internal-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .resources-content {
+        margin: 0 40px; /* Increased margin for medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .resources-content {
+        margin: 0 80px; /* Increased margin for large screens */
+    }
+}
+
+@media (min-width: 1440px) {
+    .resources-content {
+        margin: 0 auto; /* Center content for extra large screens */
+    }
+}
+
 /* Contact Form Section */
 .contact {
     padding: 80px 20px;
-    background-color: var(--color-background1);
+    background-color: var(--color-background2);
     color: var(--color-text);
 }
 
