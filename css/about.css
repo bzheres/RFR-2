@@ -4,6 +4,7 @@
     max-width: 75%;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 /* Hero Section */
@@ -18,12 +19,15 @@
 .about-hero h1 {
     font-size: var(--h1-font-size);
     padding: 20px;
+    text-align: left;
 }
 
 .about-hero p {
     font-size: var(--body-font-size);
-    text-align: center;
+    text-align: left;
     line-height: 1.8;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 /* Mission Section */
@@ -37,11 +41,13 @@
 .about-mission h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .about-mission p {
     font-size: var(--body-font-size);
     line-height: 1.8;
+    text-align: left;
 }
 
 /* Team Section */
@@ -55,7 +61,7 @@
 .about-founder h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 20px;
-
+    text-align: left;
 }
 
 .founder-details img {
@@ -68,16 +74,19 @@
 .founder-details h3 {
     font-size: var(--h4-font-size);
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .founder-details h5 {
     font-size: var(--h5-font-size);
+    text-align: left;
 }
 
 .founder-details p {
     font-size: var(--body-font-size);
     color: var(--color-text);
     line-height: 1.8;
+    text-align: left;
 }
 
 /* Values Section */
@@ -90,27 +99,29 @@
 .about-values h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .about-values ul {
     list-style: none;
     padding: 0;
+    text-align: left;
 }
 
 .about-values li {
     margin-bottom: 30px;
-    text-align: center;
 }
 
 .about-values h3 {
     font-size: var(--h3-font-size);
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .about-values p {
     font-size: var(--body-font-size);
     line-height: 1.8;
+    text-align: left;
 }
 
 /* History Section */
@@ -124,11 +135,13 @@
 .about-history h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .about-history p {
     font-size: var(--body-font-size);
     line-height: 1.8;
+    text-align: left;
 }
 
 /* Contact Section */
@@ -141,11 +154,13 @@
 .about-contact h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .about-contact p {
     font-size: var(--body-font-size);
     line-height: 1.8;
+    text-align: left;
 }
 
 .about-contact a {

@@ -1,0 +1,280 @@
+/* Container */
+.resources-container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.resources-hero {
+    background-color: var(--color-primary4);
+    color: var(--color-text);
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resources-hero h1,
+.resources-hero p {
+    text-align: left; /* Left-justify the text */
+}
+
+.resources-hero h1 {
+    font-size: var(--h1-font-size);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.resources-hero p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* Books Section */
+.resources-books {
+    padding: 50px 20px;
+    background-color: var(--color-background1);
+    color: var(--color-text);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resources-books h2,
+.resources-books p,
+.resources-books ul {
+    text-align: left; /* Left-justify the text */
+}
+
+.resources-books h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.resources-books p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+.resources-books ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-books li {
+    margin-bottom: 15px;
+    font-size: var(--body-font-size);
+}
+
+/* Websites Section */
+.resources-websites {
+    padding: 50px 20px;
+    background-color: var(--color-background2);
+    color: var(--color-text);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resources-websites h2,
+.resources-websites p,
+.resources-websites ul {
+    text-align: left; /* Left-justify the text */
+}
+
+.resources-websites h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.resources-websites p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+.resources-websites ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-websites li {
+    margin-bottom: 15px;
+    font-size: var(--body-font-size);
+}
+
+.resources-websites a {
+    color: var(--color-primary3);
+    text-decoration: none;
+}
+
+.resources-websites a:hover {
+    text-decoration: underline;
+}
+
+/* Online Courses Section */
+.resources-courses {
+    padding: 50px 20px;
+    background-color: var(--color-background1);
+    color: var(--color-text);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resources-courses h2,
+.resources-courses p,
+.resources-courses ul {
+    text-align: left; /* Left-justify the text */
+}
+
+.resources-courses h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.resources-courses p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+.resources-courses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-courses li {
+    margin-bottom: 15px;
+    font-size: var(--body-font-size);
+}
+
+.resources-courses a {
+    color: var(--color-primary3);
+    text-decoration: none;
+}
+
+.resources-courses a:hover {
+    text-decoration: underline;
+}
+
+/* Journals Section */
+.resources-journals {
+    padding: 50px 20px;
+    background-color: var(--color-background2);
+    color: var(--color-text);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resources-journals h2,
+.resources-journals p,
+.resources-journals ul {
+    text-align: left; /* Left-justify the text */
+}
+
+.resources-journals h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.resources-journals p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+.resources-journals ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-journals li {
+    margin-bottom: 15px;
+    font-size: var(--body-font-size);
+}
+
+.resources-journals a {
+    color: var(--color-primary3);
+    text-decoration: none;
+}
+
+.resources-journals a:hover {
+    text-decoration: underline;
+}
+
+/* Community Section */
+.resources-community {
+    padding: 50px 20px;
+    background-color: var(--color-background1);
+    color: var(--color-text);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.resources-community h2,
+.resources-community p,
+.resources-community ul {
+    text-align: left; /* Left-justify the text */
+}
+
+.resources-community h2 {
+    font-size: var(--h1-font-size);
+    margin-bottom: 20px;
+}
+
+.resources-community p {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+.resources-community ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-community li {
+    margin-bottom: 15px;
+    font-size: var(--body-font-size);
+}
+
+.resources-community a {
+    color: var(--color-primary3);
+    text-decoration: none;
+}
+
+.resources-community a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resources-container {
+        max-width: 90%;
+    }
+
+    .resources-hero h1,
+    .resources-hero p,
+    .resources-books h2,
+    .resources-books p,
+    .resources-books ul,
+    .resources-websites h2,
+    .resources-websites p,
+    .resources-websites ul,
+    .resources-courses h2,
+    .resources-courses p,
+    .resources-courses ul,
+    .resources-journals h2,
+    .resources-journals p,
+    .resources-journals ul,
+    .resources-community h2,
+    .resources-community p,
+    .resources-community ul {
+        text-align: left;
+        padding: 0 10px;
+    }
+}
+
+/* Ensure no horizontal overflow */
+body, html {
+    overflow-x: hidden;
+}
