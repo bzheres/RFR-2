@@ -408,7 +408,7 @@ body.fade-out {
     margin-bottom: 20px;
 }
 
-.product-info a {
+.product-info .heropage-internal-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--color-primary3);
@@ -418,8 +418,21 @@ body.fade-out {
     transition: background-color 0.3s ease;
 }
 
-.product-info a:hover {
+.product-info .heropage-internal-link:hover {
     background-color: var(--color-secondary5);
+}
+
+.product-info .heropage-external-link {
+    color: var(--color-primary3);
+    text-decoration: underline;
+    
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.product-info .heropage-external-link:hover {
+    color: var(--color-secondary2);
 }
 
 /* Media Query for Larger Screens */
