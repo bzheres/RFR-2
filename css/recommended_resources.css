@@ -36,245 +36,214 @@
 }
 
 /* Books Section */
-.resources-books {
+.resources-books,
+.resources-websites,
+.resources-courses,
+.resources-journals,
+.resources-community {
     padding: 50px 20px;
-    background-color: var(--color-background1);
     color: var(--color-text);
     width: 100%;
     box-sizing: border-box;
+}
+
+.resources-books {
+    background-color: var(--color-background1);
+}
+
+.resources-websites {
+    background-color: var(--color-background2);
+}
+
+.resources-journals {
+    background-color: var(--color-background1);
+}
+
+.resources-courses,
+.resources-community {
+    background-color: var(--color-background1);
 }
 
 .resources-books h2,
+.resources-books h3,
 .resources-books p,
-.resources-books ul {
-    text-align: left; /* Left-justify the text */
-}
-
-.resources-books h2 {
-    font-size: var(--h1-font-size);
-    margin-bottom: 20px;
-}
-
-.resources-books p {
-    font-size: var(--body-font-size);
-    line-height: 1.8;
-}
-
-.resources-books ul {
-    list-style: none;
-    padding: 0;
-}
-
-.resources-books li {
-    margin-bottom: 15px;
-    font-size: var(--body-font-size);
-}
-
-/* Websites Section */
-.resources-websites {
-    padding: 50px 20px;
-    background-color: var(--color-background2);
-    color: var(--color-text);
-    width: 100%;
-    box-sizing: border-box;
-}
-
+.resources-books ul,
 .resources-websites h2,
 .resources-websites p,
-.resources-websites ul {
-    text-align: left; /* Left-justify the text */
-}
-
-.resources-websites h2 {
-    font-size: var(--h1-font-size);
-    margin-bottom: 20px;
-}
-
-.resources-websites p {
-    font-size: var(--body-font-size);
-    line-height: 1.8;
-}
-
-.resources-websites ul {
-    list-style: none;
-    padding: 0;
-}
-
-.resources-websites li {
-    margin-bottom: 15px;
-    font-size: var(--body-font-size);
-}
-
-.resources-websites a {
-    color: var(--color-primary3);
-    text-decoration: none;
-}
-
-.resources-websites a:hover {
-    text-decoration: underline;
-}
-
-/* Online Courses Section */
-.resources-courses {
-    padding: 50px 20px;
-    background-color: var(--color-background1);
-    color: var(--color-text);
-    width: 100%;
-    box-sizing: border-box;
-}
-
+.resources-websites ul,
 .resources-courses h2,
 .resources-courses p,
-.resources-courses ul {
-    text-align: left; /* Left-justify the text */
-}
-
-.resources-courses h2 {
-    font-size: var(--h1-font-size);
-    margin-bottom: 20px;
-}
-
-.resources-courses p {
-    font-size: var(--body-font-size);
-    line-height: 1.8;
-}
-
-.resources-courses ul {
-    list-style: none;
-    padding: 0;
-}
-
-.resources-courses li {
-    margin-bottom: 15px;
-    font-size: var(--body-font-size);
-}
-
-.resources-courses a {
-    color: var(--color-primary3);
-    text-decoration: none;
-}
-
-.resources-courses a:hover {
-    text-decoration: underline;
-}
-
-/* Journals Section */
-.resources-journals {
-    padding: 50px 20px;
-    background-color: var(--color-background2);
-    color: var(--color-text);
-    width: 100%;
-    box-sizing: border-box;
-}
-
+.resources-courses ul,
 .resources-journals h2,
 .resources-journals p,
-.resources-journals ul {
-    text-align: left; /* Left-justify the text */
-}
-
-.resources-journals h2 {
-    font-size: var(--h1-font-size);
-    margin-bottom: 20px;
-}
-
-.resources-journals p {
-    font-size: var(--body-font-size);
-    line-height: 1.8;
-}
-
-.resources-journals ul {
-    list-style: none;
-    padding: 0;
-}
-
-.resources-journals li {
-    margin-bottom: 15px;
-    font-size: var(--body-font-size);
-}
-
-.resources-journals a {
-    color: var(--color-primary3);
-    text-decoration: none;
-}
-
-.resources-journals a:hover {
-    text-decoration: underline;
-}
-
-/* Community Section */
-.resources-community {
-    padding: 50px 20px;
-    background-color: var(--color-background1);
-    color: var(--color-text);
-    width: 100%;
-    box-sizing: border-box;
-}
-
+.resources-journals ul,
 .resources-community h2,
 .resources-community p,
 .resources-community ul {
     text-align: left; /* Left-justify the text */
 }
 
+.resources-books h2,
+.resources-websites h2,
+.resources-courses h2,
+.resources-journals h2,
 .resources-community h2 {
     font-size: var(--h1-font-size);
     margin-bottom: 20px;
 }
 
+.resources-books h3 {
+    font-size: var(--h3-font-size);
+    margin-bottom: 10px; /* Added margin for separation */
+}
+
+.resources-books p,
+.resources-websites p,
+.resources-courses p,
+.resources-journals p,
 .resources-community p {
     font-size: var(--body-font-size);
     line-height: 1.8;
 }
 
+.resources-books ul,
+.resources-websites ul,
+.resources-courses ul,
+.resources-journals ul,
 .resources-community ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
+.resources-books li,
+.resources-websites li,
+.resources-courses li,
+.resources-journals li,
 .resources-community li {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Space between each entry */
     font-size: var(--body-font-size);
 }
 
-.resources-community a {
-    color: var(--color-primary3);
+.book-title,
+.website-title,
+.course-title,
+.journal-title,
+.community-title {
+    font-size: var(--h4-font-size);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.book-card,
+.website-card,
+.course-card,
+.journal-card,
+.community-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-image-container,
+.website-image-container,
+.course-image-container,
+.journal-image-container,
+.community-image-container {
+    flex: 1;
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.book-image,
+.website-image,
+.course-image,
+.journal-image,
+.community-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 5px;
+}
+
+.book-details,
+.website-details,
+.course-details,
+.journal-details,
+.community-details {
+    flex: 2;
+}
+
+.book-description,
+.website-description,
+.course-description,
+.journal-description,
+.community-description {
+    font-size: var(--body-font-size);
+    line-height: 1.8;
+}
+
+.book-description a,
+.website-description a,
+.course-description a,
+.journal-description a,
+.community-description a {
+    color: var(--color-text);
     text-decoration: none;
+    display: inline-block; 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    background-color: var(--color-secondary4); 
+    max-width: 300px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
 }
 
-.resources-community a:hover {
+.book-description a:hover,
+.website-description a:hover,
+.course-description a:hover,
+.journal-description a:hover,
+.community-description a:hover {
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .resources-container {
-        max-width: 90%;
-    }
-
-    .resources-hero h1,
-    .resources-hero p,
-    .resources-books h2,
-    .resources-books p,
-    .resources-books ul,
-    .resources-websites h2,
-    .resources-websites p,
-    .resources-websites ul,
-    .resources-courses h2,
-    .resources-courses p,
-    .resources-courses ul,
-    .resources-journals h2,
-    .resources-journals p,
-    .resources-journals ul,
-    .resources-community h2,
-    .resources-community p,
-    .resources-community ul {
-        text-align: left;
-        padding: 0 10px;
-    }
 }
 
 /* Ensure no horizontal overflow */
 body, html {
     overflow-x: hidden;
+}
+
+/* Responsive Card Layout */
+@media (max-width: 768px) {
+    .book-card,
+    .website-card,
+    .course-card,
+    .journal-card,
+    .community-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .book-image-container,
+    .website-image-container,
+    .course-image-container,
+    .journal-image-container,
+    .community-image-container {
+        margin-bottom: 20px;
+    }
+
+    .book-details,
+    .website-details,
+    .course-details,
+    .journal-details,
+    .community-details {
+        width: 100%;
+    }
+}
+
+.styled-text-graybg {
+    color: var(--color-secondary2);
+    font-weight: bold;
 }

@@ -19,12 +19,12 @@
 .about-hero h1 {
     font-size: var(--h1-font-size);
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .about-hero p {
     font-size: var(--body-font-size);
-    text-align: justify;
+    text-align: left;
     line-height: 1.8;
     margin: 0 auto;
     padding: 0 10px;
@@ -47,7 +47,7 @@
 .about-mission p {
     font-size: var(--body-font-size);
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Team Section */
@@ -86,7 +86,7 @@
     font-size: var(--body-font-size);
     color: var(--color-text);
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Values Section */
@@ -122,7 +122,7 @@
 .about-values p {
     font-size: var(--body-font-size);
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
 }
 
 /* History Section */
@@ -142,7 +142,7 @@
 .about-history p {
     font-size: var(--body-font-size);
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Contact Section */
@@ -161,7 +161,7 @@
 .about-contact p {
     font-size: var(--body-font-size);
     line-height: 1.8;
-    text-align: justify;
+    text-align: left;
 }
 
 .about-contact a {

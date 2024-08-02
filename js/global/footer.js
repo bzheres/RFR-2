@@ -26,6 +26,29 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => {
                 console.log('Fetched HTML:', data);
                 el.innerHTML = data;
+                
+                // Initialize popup functionality
+                const phoneLink = document.getElementById('phone-link');
+                const popup = document.getElementById('phone-popup');
+                const closeButton = document.querySelector('.popup .close');
+                
+                if (phoneLink && popup && closeButton) {
+                    phoneLink.addEventListener('click', function (event) {
+                        event.preventDefault(); // Prevent the default action (navigation)
+                        popup.style.display = 'block'; // Show the popup
+                    });
+                    
+                    closeButton.addEventListener('click', function () {
+                        popup.style.display = 'none'; // Hide the popup
+                        window.location.href = phoneLink.href; // Redirect to phone link after closing popup
+                    });
+                    
+                    window.addEventListener('click', function (event) {
+                        if (event.target === popup) {
+                            popup.style.display = 'none'; // Hide the popup if clicked outside of it
+                        }
+                    });
+                }
             })
             .catch(error => {
                 console.error('Error fetching footer HTML:', error);
