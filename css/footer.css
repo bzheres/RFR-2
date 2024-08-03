@@ -91,6 +91,14 @@
     padding-left: 150px;
 }
 
+.footer-copyright a {
+    color: var(--color-text);
+}
+
+.footer-copyright a:hover {
+    color: var(--color-primary3);
+}
+
 /* Responsive Design */
 @media (max-width: 766px) {
     .footer_columns {
