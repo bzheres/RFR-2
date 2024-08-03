@@ -48,7 +48,7 @@
 }
 
 .resources-books {
-    background-color: var(--color-background1);
+    background-color: var(--color-background2);
 }
 
 .resources-websites {
@@ -56,7 +56,7 @@
 }
 
 .resources-journals {
-    background-color: var(--color-background1);
+    background-color: var(--color-background2);
 }
 
 .resources-courses,
@@ -184,30 +184,29 @@
     line-height: 1.8;
 }
 
-.book-description a,
-.website-description a,
-.course-description a,
-.journal-description a,
-.community-description a {
-    color: var(--color-text);
-    text-decoration: none;
-    display: inline-block; 
-    margin-top: 20px; 
-    padding: 10px 20px; 
-    border-radius: 20px; 
-    background-color: var(--color-secondary4); 
-    max-width: 300px; 
-    margin-left: auto; 
-    margin-right: auto; 
-    text-align: center; 
+/* Specific styling for different links */
+
+/* Styled Link */
+.styled-link {
+    color: var(--color-secondary2); 
+    font-weight: bold;
+    text-decoration: none; 
 }
 
-.book-description a:hover,
-.website-description a:hover,
-.course-description a:hover,
-.journal-description a:hover,
-.community-description a:hover {
-    text-decoration: underline;
+.styled-link:hover {
+    color: var(--color-secondary2); 
+    text-decoration: underline; 
+}
+
+/* Amazon Link */
+.amazon-link {
+    color: var(--color-secondary2); 
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+.amazon-link:hover {
+    color: var(--color-primary2); 
 }
 
 /* Ensure no horizontal overflow */
