@@ -4,7 +4,7 @@
 .article section img {
     width: 200px; 
     height: 200px; 
-    object-fit: cover; 
+    object-fit: contain; 
     margin: 10px;
 }
 
@@ -89,7 +89,7 @@ figcaption {
 
 .article section p a {
     text-decoration: dotted underline;
-    color: var(--color-secondary3);
+    color: var(--color-secondary2);
     font-weight: bold;
 }
 
@@ -99,7 +99,7 @@ figcaption {
 
 .article section li a {
     text-decoration: dotted underline;
-    color: var(--color-secondary3);
+    color: var(--color-secondary2);
     font-weight: bold;
 }
 
@@ -167,6 +167,12 @@ figcaption {
     .article header h1 {
         font-size: 1.8em;
     }
+
+    .article section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+        
 }
 
 @media (max-width: 576px) {
@@ -177,4 +183,10 @@ figcaption {
     .article section h2 {
         font-size: 1.3em;
     }
+
+    .article section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
+
