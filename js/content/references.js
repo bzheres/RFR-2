@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Adjust scroll position to account for the height of the navbar
     function adjustScrollPosition(targetElement) {
-        const navbarHeight = 100; 
+        const navbarHeight = 80; 
         const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
         window.scrollTo({
             top: targetPosition,
@@ -33,15 +33,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Function to open references and scroll to a specific reference
+    function openReferencesAndScroll(targetId) {
+        if (referencesSection.style.display === 'none' || referencesSection.style.display === '') {
+            toggleReferences();
+        }
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            adjustScrollPosition(targetElement);
+        }
+    }
+
     // Attach event listener to all internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(event) {
             event.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                adjustScrollPosition(targetElement);
-            }
+            openReferencesAndScroll(targetId);
         });
     });
 

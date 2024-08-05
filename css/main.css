@@ -37,6 +37,7 @@
     --h4-font-size: 1.25em; /* 20px */
     --h5-font-size: 1em; /* 16px */
     --h6-font-size: 0.875em; /* 14px */
+    --ref-font-size: 0.75em;
 }
 
 [data-theme="dark"] {
@@ -104,6 +105,7 @@ h6 {
     --h4-font-size: 1.5em; /* 24px */
     --h5-font-size: 1.25em; /* 20px */
     --h6-font-size: 1.125em; /* 18px */
+    --ref-font-size: 0.875em;
 }
 
 .larger-text {
@@ -114,6 +116,7 @@ h6 {
     --h4-font-size: 1.75em; /* 28px */
     --h5-font-size: 1.5em; /* 24px */
     --h6-font-size: 1.375em; /* 22px */
+    --ref-font-size: 1em;
 }
 
 .largest-text {
@@ -124,6 +127,7 @@ h6 {
     --h4-font-size: 2em; /* 32px */
     --h5-font-size: 1.75em; /* 28px */
     --h6-font-size: 1.625em; /* 26px */
+    --ref-font-size: 1.125em;
 }
 
 /* Navigation styling */
