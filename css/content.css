@@ -145,6 +145,7 @@ figcaption {
 .article .references ul li {
     font-size: var(--ref-font-size);
     margin-bottom: 10px;
+    overflow-wrap: break-word;
 }
 
 .ref_numstyle {
