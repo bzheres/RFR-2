@@ -10,7 +10,7 @@ function fetchSearchResults(query) {
     //PLEASE CHECK HERE
     //THIS IS WHERE I CHANGED "Promise.all" to PROMISE.all" TO BREAK THE SEARCH WHILE THE SITE IS BEING PREPARED
     
-    // SEE ABOVE
+    // SEE ABOVE  
     //SEE ABOVE
     Promise.all([
         fetch(anatomyArticlesURL).then(response => {

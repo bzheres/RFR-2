@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Prepare data for Fuse.js
             const fuseOptions = {
-                keys: ['title', 'description'],
+                keys: ['title', 'description', 'keywords'],
                 includeScore: true,
                 threshold: 0.4, // Adjust as needed
                 ignoreLocation: true,
