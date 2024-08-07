@@ -4,6 +4,12 @@
             "title": "Introduction to Anatomy",
             "description": "Review the basic concepts of anatomy such as the anatomical position and anatomical planes. Also, learn important terminology that is essential before beginning you anatomy studies.",
             "url": "../../html/anatomy/intro to anatomy/intro_to_anatomy.html"
+        },
+        {
+            "title": "Liver Segmental Anatomy",
+            "description": "The Couinaud Classification system is widely used to divide the liver into functional segments. Understanding these segments is useful for radiologists and surgeons.",
+            "url": "../../html/anatomy/intro to anatomy/intro_to_anatomy.html"
         }
+
     ]
 }
