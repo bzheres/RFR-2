@@ -3,13 +3,14 @@
         {
             "title": "Introduction to Anatomy",
             "description": "Review the basic concepts of anatomy such as the anatomical position and anatomical planes. Also, learn important terminology that is essential before beginning you anatomy studies.",
-            "url": "../../html/anatomy/abdomen & pelvis/liver/liver segmental anatomy.html"
+            "url": "../../html/anatomy/abdomen & pelvis/liver/liver segmental anatomy.html",
+            "keywords": ["anatomy", "anatomical position", "flexion", "extension", "anatomy terminology", "anatomical terminology"]
         },
         {
             "title": "Liver Segmental Anatomy",
             "description": "The Couinaud Classification system is widely used to divide the liver into functional segments. Understanding these segments is useful for radiologists and surgeons.",
-            "url": "../../html/anatomy/abdomen & pelvis/liver/liver segmental anatomy.html"
+            "url": "../../html/anatomy/abdomen & pelvis/liver/liver segmental anatomy.html",
+            "keywords": ["Couinaud", "caudate lobe", "liver segments", "segmental anatomy", "segment 1", "segment 2", "segment 3", "segment 4a", "segment 4b", "segment 5", "segment 6", "segment 7", "segment 8", "Reidel", "Reidel's lobe"]
         }
-
     ]
 }

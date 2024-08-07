@@ -40,7 +40,7 @@ function fetchSearchResults(query) {
 
         // Set up Fuse.js for searching
         const fuseOptions = {
-            keys: ["title", "description", "url"],
+            keys: ["title", "description", "url", "keywords"],
             includeScore: true, // Optional: include score in search results
             threshold: 0.3 // Optional: adjust threshold for fuzzy search
         };
