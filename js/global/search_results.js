@@ -58,6 +58,7 @@ function fetchSearchResults(query) {
                 resultItem.classList.add('search-card');
 
                 resultItem.innerHTML = `
+                    <a href="${result.item.url}">
                     <div class="search-card-header">
                         <h3 class="search-card-title">${result.item.title}</h3>
                     </div>
@@ -65,6 +66,7 @@ function fetchSearchResults(query) {
                         <p class="search-card-description">${result.item.description}</p>
                         <a href="${result.item.url}" class="search-card-link">Read more</a>
                     </div>
+                    </a>
                 `;
                 searchResultsDiv.appendChild(resultItem);
             });

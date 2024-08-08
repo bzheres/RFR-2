@@ -26,6 +26,11 @@
     margin-bottom: 20px;
 }
 
+.search-card a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 .search-results-container .search-card-header {
     text-align: left;
     margin-bottom: 10px;
