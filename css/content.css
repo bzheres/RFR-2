@@ -75,8 +75,8 @@ figcaption {
 }
 
 /* Style article subheadings (h3) */
-.article section h4.article_subheading {
-    font-size: var(--h4-font-size); 
+.article section h3.article_subheading {
+    font-size: var(--h3-font-size); 
     color: var(--color-primary3);
     margin-top: 20px; 
     margin-bottom: 10px;
