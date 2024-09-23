@@ -12,7 +12,7 @@ function fetchSearchResults(query) {
     
     // SEE ABOVE  
     //SEE ABOVE
-    PROMISE.all([
+    Promise.all([
         fetch(anatomyArticlesURL).then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to fetch ${anatomyArticlesURL}: ${response.statusText}`);

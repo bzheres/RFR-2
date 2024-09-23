@@ -7,12 +7,6 @@
             "keywords": ["anatomy", "anatomical position", "flexion", "extension", "anatomy terminology", "anatomical terminology"]
         },
         {
-            "title": "Liver Segmental Anatomy",
-            "description": "The Couinaud Classification system is widely used to divide the liver into functional segments. Understanding these segments is useful for radiologists and surgeons.",
-            "url": "../../html/anatomy/abdomen & pelvis/liver/liver segmental anatomy.html",
-            "keywords": ["Couinaud", "caudate lobe", "liver segments", "segmental anatomy", "segment 1", "segment 2", "segment 3", "segment 4a", "segment 4b", "segment 5", "segment 6", "segment 7", "segment 8", "Reidel", "Reidel's lobe"]
-        },
-        {
             "title": "Abdominal Aorta",
             "description": "The abdominal aorta is the continuation of the thoracic aorta and is the main blood supply of the abdomen. It enters the abdominal cavity by passing through the aortic hiatus at T12 and terminates at L4 at the bifurcation of the common iliacs.",
             "url": "../../html/anatomy/abdomen & pelvis/blood supply/abdominal aorta.html",
@@ -23,7 +17,20 @@
             "description": "The anterior cruciate ligament (ACL) is one of the two cruciate ligaments in the knee. It is composed of two bundles, receives its blood supply from the middle genicular artery, and is innervated by the tibial nerve.",
             "url": "../../html/anatomy/limbs/lower%20limb/anterior%20crucitate%20ligament.html",
             "keywords": ["Anterior cruciate ligament", "ACL", "cruciate ligaments", "knee anatomy", "ligaments", "cruciate", "knee ligaments", "anteromedial bundle", "AMB", "posteromedial bundle", "PMB", "intermediate bundle", "ACL tears", "middle genicular artery", "tibial nerve", "knee", "lower limb anatomy"]
+        },
+        {
+            "title": "Liver Segmental Anatomy",
+            "description": "The Couinaud Classification system is widely used to divide the liver into functional segments. Understanding these segments is useful for radiologists and surgeons.",
+            "url": "../../html/anatomy/abdomen & pelvis/liver/liver segmental anatomy.html",
+            "keywords": ["Couinaud", "caudate lobe", "liver segments", "segmental anatomy", "segment 1", "segment 2", "segment 3", "segment 4a", "segment 4b", "segment 5", "segment 6", "segment 7", "segment 8", "Reidel", "Reidel's lobe"]
+        },
+        {
+            "title": "Uterus",
+            "description": "The uterus is positioned between the bladder and the rectum in the pelvis and is a central anatomical landmark of the female reproductive system.",
+            "url": "../../html/anatomy/abdomen & pelvis/uterus/uterus.html",
+            "keywords": ["uterus", "fundus", "uterine fundus", "body", "uterine body", "isthmus", "uterine isthmus", "cervix", "uterine cervix", "uterine artery", "ovarian artery", "arcuate arteries", "radial arteries", "spiral arteries", "uterine vein", "anteversion", "anteflexion", "version", "flexion", "rectouterine pouch", "pouch of Douglas", "vesicouterine pouch", "broad ligament", "round ligament", "inferior hypogastric plexus", "Müllerian anomalies", "endometrium", "myometrium"]
         }
+        
     ]
 }
 
